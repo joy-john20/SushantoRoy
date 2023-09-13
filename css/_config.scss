@@ -1,0 +1,21 @@
+$primary-color: rgb(51, 51, 51);
+$secondary-color: #ffffff;
+$maroon-color: #B31312;
+$nevy-color: #2B2A4C;
+$cream-color: #EA906C;
+$offwhite-color: #EEE2DE;
+$primary-font: "Poppins", Arial, sans-serif;
+$sec-font: 'Inter', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $primary-font;
+    color: $primary-color;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 
+        var(--scroll-padding, 5rem);
+}

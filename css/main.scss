@@ -1,0 +1,373 @@
+@import "config";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+
+
+.navbar{
+    align-items: flex-start;
+    background-color: $nevy-color;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        }
+    }
+
+    .nav-links{
+        display: none;
+        ul{
+            width: 100%;
+        }
+        li{
+            width: 100%;
+            list-style: none;
+            text-align: center;
+            :hover {
+                background-color: rgb(157, 153, 153);
+            }
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: .5rem 1rem;
+            display: inline-block;
+        }
+    }
+
+    .toggle-btn {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        .bar{
+            height: 3.5px;
+            width: 100%;
+            background-color: white;
+            border-radius: 5px;
+        }
+    }
+
+    .active {
+        display: flex;
+    }
+    
+    .collaspe{
+        display: none;
+    }
+}
+
+.cover {
+    background-image: url(../photos/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 77% 10vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .main-text {
+        padding: 7rem 2.5rem 1.5rem 2.5rem;
+
+        H1 {
+            font-weight: 800;
+            color: white;
+            line-height: 1.2;
+            font-size: 2.5em;
+        }
+
+        h3 {
+            line-height: 1.2;
+    text-transform: uppercase;
+    color: $offwhite-color;
+    font-weight: 400;
+    text-align: center;
+        }
+    }
+
+    .hire-me {
+        border: 3px solid $offwhite-color;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $offwhite-color;
+    background-color: transparent;
+    font-weight: 600;
+    &:hover {
+        background-color: $cream-color;
+        color: $nevy-color;
+    }
+    }
+}
+.major {
+    padding: 1rem;
+}
+
+.links {
+    font-size: 2em;
+font-weight: 400;
+margin-bottom: 0.5rem;
+color: $nevy-color;
+}
+
+.about-me{
+    .about-me-left{display: none;}
+    p {
+        text-align: justify;
+        margin-bottom: 1rem;
+        color: $primary-color;
+    }
+    .personal-info{
+        padding: 0 .5rem;
+        color: $primary-color;
+        th {
+        text-align: left;
+        vertical-align: top;
+        }
+    }
+}
+
+.academics {
+    background-color: $offwhite-color;
+    .aca-box{
+        margin: 2.5rem 0;
+        border: 2px solid $nevy-color;
+        border-radius: 5px;
+    }
+    .f-box {
+        margin-top: 0;
+    }
+    .l-box {
+        margin-bottom: 0;
+    }
+    th {
+        text-align: left;
+        vertical-align: top;
+        }
+    p {
+        span {
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+}
+
+.skills {
+    .skill-sec-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .bar-con{
+            width: 32%;
+            position: relative;
+            h4 {
+                margin-bottom: .3rem;
+                font-size: .8rem;
+                span {
+                    font-weight: 300;
+                    font-size: .6rem;
+                }
+            }
+            .bar-track{
+                width: 100%;
+                position: absolute;
+                // top: 1.2rem;
+                z-index: 1;
+                background-color: transparent;
+                border: 1.5px solid $nevy-color;
+                border-radius: 18px;
+                height: 1.2rem;
+                span {
+                    position: absolute;
+                    z-index: 5;
+                    color: white;
+                    width: 100%;
+                    height: 1.2rem;
+                    text-align: center;
+                    bottom: 0.05rem;
+                    // top: 1.2rem;
+                }   
+            }
+            .bar-fill{
+                // width: 96%;
+                background-color: $nevy-color;
+                height: 1.2rem;
+                position: absolute;
+                border-radius: 18px;
+
+                // top: 1.2rem;
+            }
+            .a {
+                width: 96%;
+            }
+            .b {
+                width: 90%;
+            }
+            .c {
+                width: 92%;
+            }
+            .d {
+                width: 85%;
+            }
+            .e {
+                width: 98%;
+            }
+        }
+    }
+}
+
+.training {
+    background-color: $offwhite-color;
+    .cards {
+        margin: 3.5rem 0;
+        background-color: #d0d0d0;
+        padding: 2.5rem 1rem 1rem 1rem;
+        position: relative;
+        border-radius: 8px;
+        .card-logo {
+            background-color: $secondary-color;
+            display: inline-block;
+            padding: .7rem;
+            border-radius: 50%;
+            position: absolute;
+            top: -2.5rem;
+            img {
+                width: 50px;
+                height: 46px;
+            }
+        }
+        .card-title{
+            line-height: 1.2;
+            margin-bottom: .5rem;
+        }
+        .card-des {
+            text-align: justify;
+        }
+    }
+}
+
+.project-cat {
+    margin: 1rem 0;
+    .project-title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: 500;
+        span {
+            position: relative;
+            display: inline-block;
+            &::after {
+                content: "";
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                background-color: $primary-color;
+                bottom: 0;
+                left: 0;
+            }
+        }  
+    }
+    .project-items {
+        // display: block;
+        margin-bottom: 2.5rem;
+        .project-items-left, .project-items-right{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: .5rem;
+            .img {
+                width: 42vw;
+                height: 40vh;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+.contact-me {
+    background-color: $offwhite-color;
+    form {
+        margin-bottom: 1rem;
+    }
+    p {
+        // text-align: center;
+        margin-bottom: .5rem;
+    }
+    .inputs {
+        width: 100%;
+        height: 2rem;
+        border-radius: 4px;
+        border: none;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+    textarea {
+        width: 100%;
+        border-radius: 4px;
+        border: none;
+        padding: 0.5rem;
+    }
+    ::placeholder{
+        font-size: 1rem;
+    }
+    .button {
+        height: 2rem;
+        padding: .5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: $nevy-color;
+        color: white;
+        &:hover {
+            background-color: $cream-color;
+            cursor: pointer;
+            color: $primary-color;
+        }
+    }
+
+    .contact-add {
+        .contact-add-card{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            .icon {
+                width: 15vw;
+                img {
+                    width: 100%
+                }
+            }
+            .card-text {
+                width: 70vw;
+                p {
+                    text-align: justify;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+@import "responsive";
