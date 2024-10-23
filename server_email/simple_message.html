@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleMail</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .body_table {
+            width: 100%;
+            min-height: 100%;
+            background-color: #EBECF0;
+        }
+
+        .main_table {
+            width: 100%;
+            max-width: 500px;
+            margin: 50px 0;
+
+        }
+
+        .Precap_logo {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            height: 30px;
+        }
+
+        .email_body {
+            width: 100%;
+        }
+
+        .email_body_div {
+            background-color: white;
+            padding: 20px 20px;
+            border-radius: 10px;
+        }
+
+        .sub_icon {
+            height: 50px;
+        }
+
+        .email_title {
+            font-size: 18px;
+            margin-top: 10px;
+            max-width: 70%;
+            text-align: center;
+        }
+
+        .email_message {
+            font-size: 13px;
+            width: 100%;
+            color: rgb(43, 43, 43);
+            text-align: left;
+            margin: 20px 0;
+            font-weight: 500;
+            line-height: 18px;
+            min-height: 100px;
+        }
+
+        .email_message span {
+            color: rgb(255, 0, 149);
+            font-weight: bold;
+        }
+
+        .ending_signature {
+            text-align: left;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+
+        .ending_signature a {
+            text-decoration: none;
+            color: rgb(255, 0, 149);
+        }
+
+        .email_footer {
+            padding-top: 20px;
+        }
+
+        .email_footer .head {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .email_footer .sub {
+            text-align: center;
+            font-size: 11px;
+            color: gray;
+            margin-top: 5px;
+        }
+
+        .email_footer .sub a {
+            text-decoration: none;
+            color: rgb(255, 0, 149);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="body_table">
+        <tr>
+            <td>
+                    <center>
+                        <table class="main_table">
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="email_body">
+                                        <tr>
+                                            <td class="email_body_div">
+                                                <center>
+                                                    <a href=""><img src="https://i.postimg.cc/FHBncqwv/notification.png"
+                                                            alt="" class="sub_icon"></a>
+                                                    <h1 class="email_title">[%EMAIL_TITLE%]</h1>
+                                                    <p class="email_message">[%EMAIL_BODY%]</p>
+
+                                                    <p class="ending_signature">
+                                                        Thank you <br>
+                                                    </p>
+                                                </center>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="email_footer">
+                                                
+                                            </td>
+
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

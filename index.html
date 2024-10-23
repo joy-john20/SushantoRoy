@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+
     <title>Shanto</title>
 </head>
 
@@ -663,7 +664,7 @@
                     <div class="project-items-right">
                         <div class="img"> <img src="./photos/photo manupaliting/4.jpg" alt="">
                         </div>
-                        <div class="img"> <img src="./photos/photo manupaliting/3.jpg" alt="">
+                        <div class="img"> <img src="./photos/photo manupaliting/3.jpg" alt="" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -676,16 +677,16 @@
         </h2>
         <p>Have a project?</p>
         <div class="contact-con">
-            <form action="">
+            <form action="server_email/email_server.php" method="POST">
                 <div class="form-top">
-                    <input class="inputs" type="text" placeholder="Your Name">
-                    <input class="inputs" type="email" placeholder="abc@xyz.com">
+                    <input class="inputs" name="name" type="text" placeholder="Your Name" required>
+                    <input class="inputs" name="email" type="email" placeholder="abc@xyz.com" required>
                 </div>
                 <div class="form-btm">
-                    <input class="inputs" type="tel" placeholder="+12345678">
-                    <input class="inputs" type="text" placeholder="Subject">
+                    <input class="inputs" name="tel" type="tel" placeholder="+12345678" value="">
+                    <input class="inputs" name="subject" type="text" placeholder="Subject" required>
                 </div>
-                <textarea name="your-massage" placeholder="Your Massage" id="" cols="30" rows="10"></textarea>
+                <textarea name="message" placeholder="Your Massage" id="" cols="30" rows="10" required></textarea>
                 <input class="button" type="submit" value="Send">
             </form>
             <div class="contact-add">
@@ -700,14 +701,14 @@
                     <div class="icon"><img src="./photos/logos/phone.png" alt="Phone"></div>
                     <div class="card-text">
                         <h3>Phone</h3>
-                        <p>+880-17854-12365</p>
+                        <p>+880-17612-23305</p>
                     </div>
                 </div>
                 <div class="contact-add-card">
                     <div class="icon"><img src="./photos/logos/envelope.png" alt="Mail"></div>
                     <div class="card-text">
                         <h3>Mail</h3>
-                        <p>sushanto9876@gmail.com</p>
+                        <p>shanto.9691@gmail.com</p>
                     </div>
                 </div>
                 <div class="contact-add-card">
